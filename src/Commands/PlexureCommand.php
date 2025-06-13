@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace VendorName\Skeleton\Commands;
+namespace PurwantoId\Plexure\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class PlexureCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'plexure';
 
     public $description = 'My command';
 

@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace VendorName\Skeleton;
+namespace PurwantoId\Plexure;
 
 use Purwantoid\LaravelPackage\Package;
 use Purwantoid\LaravelPackage\PackageServiceProvider;
-use VendorName\Skeleton\Commands\SkeletonCommand;
+use PurwantoId\Plexure\Commands\PlexureCommand;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class PlexureServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -18,10 +18,10 @@ class SkeletonServiceProvider extends PackageServiceProvider
          * More info: https://github.com/purwantoid/laravel-package
          */
         $package
-            ->name('skeleton')
+            ->name('plexure')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_migration_table_name_table')
-            ->hasCommand(SkeletonCommand::class);
+            ->hasMigration('create_plexure_table')
+            ->hasCommand(PlexureCommand::class);
     }
 }

@@ -1,12 +1,12 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "purwantoid/plexure",
+    "description": "an object-relational mapper (ORM)",
     "keywords": [
-        ":vendor_name",
+        "PurwantoId",
         "laravel",
-        ":package_slug"
+        "plexure"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/purwantoid/plexure",
     "license": "MIT",
     "authors": [
         {
@@ -34,13 +34,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "PurwantoId\\Plexure\\": "src/",
+            "PurwantoId\\Plexure\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/",
+            "PurwantoId\\Plexure\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -57,10 +57,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "PurwantoId\\Plexure\\PlexureServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "Plexure": "PurwantoId\\Plexure\\Facades\\Plexure"
             }
         }
     },
